@@ -22,7 +22,7 @@ class Blockchain {
         try {
             this.getBlockHeight().then((height) => {
                 if(height === -1) {
-                    this.addBlock(new Block.Block('Genesis block')).then((result) => {
+                    this.addBlock(new Block.Block('First block in the chain - Genesis block')).then((result) => {
                         console.log(result);
                         console.log('Genesis block added!')
                     });
